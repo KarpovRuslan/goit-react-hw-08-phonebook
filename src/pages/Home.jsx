@@ -20,7 +20,7 @@ export default function Home() {
         <span role="img" aria-label="Greeting icon">
           💁‍♀️
         </span>{' '}
-        <div>Just press Log in in the bottom bar</div>
+        <div>Just press "Log in" in the bottom bar</div>
         to add or manage your contact list.{' '}
       </h1>
     </div>
