@@ -1,6 +1,7 @@
 .Filter__input {
   margin-top: 0px;
-  width: 150px;
+  margin-bottom: 0px;
+  width: 165px;
 }
 .Filter {
   margin-top: 0px;
@@ -12,10 +13,14 @@
 }
 
 .Filter__block {
-  max-width: 350px;
+  width: 360px;
   font-size: 18px;
   margin-top: 20px;
+  margin-bottom: 10px;
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
+  border: 1px solid #1976d2;
+  padding: 10px;
+  border-radius: 5px;
 }

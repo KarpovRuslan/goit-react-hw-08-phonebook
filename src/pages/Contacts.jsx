@@ -15,6 +15,7 @@ export default function Contacts() {
     <div>
       <Helmet title="Contacts" />
       <Wrapper>
+        <h1>Manage your contacts list</h1>
         <ContactForm />
         <Filter />
         <ContactList />

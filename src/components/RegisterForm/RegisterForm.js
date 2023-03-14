@@ -1,3 +1,4 @@
+import { Button, TextField } from '@mui/material';
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
 import css from './RegisterForm.module.css';
@@ -19,20 +20,41 @@ export const RegisterForm = () => {
   };
 
   return (
-    <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
-      <label className={css.label}>
-        Username
-        <input type="text" name="name" />
-      </label>
-      <label className={css.label}>
-        Email
-        <input type="email" name="email" />
-      </label>
-      <label className={css.label}>
-        Password
-        <input type="password" name="password" />
-      </label>
-      <button type="submit">Register</button>
-    </form>
+    <div className={css.container}>
+      <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
+        <h2 className={css.title}>Create an account</h2>
+        <p>Already have an account?</p>
+        <TextField
+          label="Username"
+          type="text"
+          name="name"
+          size="small"
+          margin="dense"
+        />
+
+        <TextField
+          label="Email"
+          type="email"
+          name="email"
+          size="small"
+          margin="dense"
+        />
+
+        <TextField
+          label="Password"
+          type="password"
+          name="password"
+          size="small"
+          margin="dense"
+        />
+        <p>
+          By creating an account, you agree to our Terms of Use and Privacy
+          Policy.
+        </p>
+        <Button type="submit" variant="contained">
+          Register
+        </Button>
+      </form>
+    </div>
   );
 };

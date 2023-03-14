@@ -6,6 +6,8 @@ import { addContact } from 'redux/contacts/operations';
 import { selectContacts } from 'redux/contacts/selectors';
 import TextField from '@mui/material/TextField';
 import { Button } from '@mui/material';
+import AddIcon from '@mui/icons-material/Add';
+import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
 
 export default function ContactForm() {
   const dispatch = useDispatch();
@@ -24,20 +26,13 @@ export default function ContactForm() {
 
   const handleSubmit = evt => {
     evt.preventDefault();
-    // const form = evt.target;
-    // dispatch(
-    //   addContact({
-    //     name: form.elements.name.value,
-    //     number: form.elements.number.value,
-    //   })
-    // );
-    // form.reset();
 
     if (!contacts?.find(el => el.name === name)) {
       dispatch(addContact({ name, number }));
     } else {
       alert(`${name} is already in contacts`);
     }
+
     setName('');
     setNumber('');
   };
@@ -71,7 +66,11 @@ export default function ContactForm() {
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           required
         />
-        <Button type="submit" variant="contained">
+        <Button
+          type="submit"
+          variant="contained"
+          startIcon={<PersonAddAlt1Icon />}
+        >
           Add contact
         </Button>
       </form>

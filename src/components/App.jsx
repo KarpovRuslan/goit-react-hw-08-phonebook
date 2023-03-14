@@ -50,27 +50,4 @@ export const App = () => {
       </Route>
     </Routes>
   );
-
-  // return (
-  //   <div>
-  //     <ButtonAppBar />
-  //     <Wrapper>
-  //       <ContactForm />
-  //       {isLoading && !error && (
-  //         <ThreeDots
-  //           height="80"
-  //           width="80"
-  //           radius="9"
-  //           color="#568f8f"
-  //           ariaLabel="three-dots-loading"
-  //           wrapperStyle={{ marginLeft: 50 }}
-  //           wrapperClassName=""
-  //           visible={true}
-  //         />
-  //       )}
-  //       <Filter />
-  //       <ContactList />
-  //     </Wrapper>
-  //   </div>
-  // );
 };
