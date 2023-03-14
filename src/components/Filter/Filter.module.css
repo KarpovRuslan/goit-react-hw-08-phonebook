@@ -1,15 +1,21 @@
 .Filter__input {
-  margin-left: 25px;
-  margin-bottom: 15px;
   margin-top: 0px;
-  width: 160px;
+  width: 150px;
 }
 .Filter {
   margin-top: 0px;
-  margin-left: 25px;
-  margin-bottom: 5px;
+  margin-right: 5px;
 }
 
 .Filter__text {
   font-weight: 600;
+}
+
+.Filter__block {
+  max-width: 350px;
+  font-size: 18px;
+  margin-top: 20px;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
 }

@@ -1,17 +1,17 @@
 .ContactForm {
-  margin-left: 20px;
   border: 1px solid blue;
   padding: 10px;
   display: inline-flex;
   flex-direction: column;
+  max-width: 400px;
+  margin-top: 20px;
+  border-radius: 5px;
 }
 .ContactForm__input {
   display: flex;
+  width: 350px;
 }
 
-.ContactForm__name {
-  margin: 0;
-}
 .ContactForm__btn {
   display: flex;
   margin-top: 10px;
