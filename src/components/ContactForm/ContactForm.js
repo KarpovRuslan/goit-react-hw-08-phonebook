@@ -6,7 +6,6 @@ import { addContact } from 'redux/contacts/operations';
 import { selectContacts } from 'redux/contacts/selectors';
 import TextField from '@mui/material/TextField';
 import { Button } from '@mui/material';
-import AddIcon from '@mui/icons-material/Add';
 import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
 
 export default function ContactForm() {

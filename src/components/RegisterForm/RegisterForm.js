@@ -1,6 +1,7 @@
 import { Button, TextField } from '@mui/material';
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
+import { NavLink } from 'react-router-dom';
 import css from './RegisterForm.module.css';
 
 export const RegisterForm = () => {
@@ -23,7 +24,14 @@ export const RegisterForm = () => {
     <div className={css.container}>
       <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
         <h2 className={css.title}>Create an account</h2>
-        <p>Already have an account?</p>
+        <p>
+          Already have an account?
+          <NavLink className={css.link} to="/login">
+            <Button type="button" color="inherit" size="small">
+              Login
+            </Button>
+          </NavLink>
+        </p>
         <TextField
           label="Username"
           type="text"
