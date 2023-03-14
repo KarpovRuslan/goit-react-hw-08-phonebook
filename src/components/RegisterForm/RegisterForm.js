@@ -10,14 +10,22 @@ export const RegisterForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.currentTarget;
-    dispatch(
-      register({
-        name: form.elements.name.value,
-        email: form.elements.email.value,
-        password: form.elements.password.value,
-      })
-    );
-    form.reset();
+    const name = form.elements.name.value;
+    const email = form.elements.email.value;
+    const password = form.elements.password.value;
+
+    if (name === '' || email === '' || password === '') {
+      alert(`Empty! Please fill all fields to Register`);
+    } else {
+      dispatch(
+        register({
+          name,
+          email,
+          password,
+        })
+      );
+      form.reset();
+    }
   };
 
   return (
