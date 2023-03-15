@@ -6,17 +6,6 @@
   border-radius: 8px;
 }
 
-.ContactList__item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.ContactList__text {
-  margin: 0;
-  margin-right: 10px;
-}
-
 .ContactList_find {
   font-size: 20px;
   margin-bottom: 2px;
